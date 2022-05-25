@@ -1,0 +1,313 @@
+$primary: #26B0FF;
+$secondary: #6A7178;
+
+
+
+
+
+
+
+* {
+
+    font-family: 'Roboto';
+}
+.pro-about {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+#side-menu {
+    padding: 30px !important;
+
+    .logo {
+        color: $primary;
+        
+
+    }
+
+    #menu {
+        margin-top: 20px;
+        justify-content: start !important;
+
+
+
+        .nav-item {
+            margin: 10px 0;
+         
+            
+
+            .nav-link {
+                color: $secondary;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 23px;
+              
+
+                i {
+                    color: $secondary;
+                    font-size: 25px;
+                    width: 40px;
+                }
+
+            }
+            .active{
+               
+                 color: black;
+                 i{
+                    color: black;
+                 }
+            }
+
+            .btn-primary {
+                background-color: $primary;
+                font-weight: 700;
+                font-size: 16px;
+                padding: 8px 45px;
+                border-radius: 32px;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+#prifile-about {
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    #profile-settings {
+
+        h6 {
+            @extend .pro-about;
+
+            i {
+                margin-right: 10px;
+            }
+        }
+
+        .active {
+            color: white !important;
+            background-color: #6A7178 !important;
+        }
+
+        .nav-link {
+            color: $secondary;
+            padding: 10px !important;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            background-color: rgba(178, 227, 255, 0.14);
+
+            &:focus {
+                @extend .active;
+
+            }
+
+            .start {
+
+                i {
+                    display: none
+                }
+            }
+
+        }
+
+    }
+
+    #about-settings {
+        h6 {
+            @extend .pro-about;
+        }
+
+        #account-type {
+
+            #account-type-top {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $secondary  !important;
+                height: 162px;
+
+                i {
+                    padding: 10px;
+                    border-radius: 50%;
+                    background-color: white;
+                }
+            }
+
+            #account-type-center {
+                display: flex;
+                align-items: stretch;
+
+                .image {
+                    position: relative;
+                    padding: 10px;
+                    top: -65px;
+
+                    img {
+                        margin-left: 41px;
+                        width: 92px;
+                        height: 92px;
+                        border-radius: 50%;
+                        border: 2px solid #FFFFFF;
+
+                    }
+
+                    i {
+                        position: absolute;
+                        bottom: 12px;
+                        right: 16px;
+                        padding: 5px;
+                        background-color: white;
+                        border-radius: 100%;
+                        box-shadow: 0 8px 8px -4px lightblue;
+                    }
+                }
+
+                .title {
+                    margin-top: 5px;
+
+
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 28px;
+
+                    span {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: $secondary;
+                    }
+
+                }
+
+            }
+
+            #account-type-end {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                #account-type-description{
+                    text-align: center;
+                    width: 80%;
+                    margin: auto;
+                }
+                #btn-verification {
+                    background-color: $primary;
+                    color: white;
+                    width: 70%;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19px;
+                    padding: 10px; 
+                }
+
+                
+            }
+        }
+
+
+
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    #side-menu {
+
+        .logo {
+
+            display: block;
+
+            span {
+                display: none;
+            }
+        }
+
+        .nav {
+            .nav-item {
+                .nav-link {
+                    padding: 5px !important;
+
+                    span {
+                        display: none;
+                    }
+                }
+
+                .btn {
+                    padding: 8px 18px !important;
+                }
+            }
+        }
+    }
+
+    #prifile-about {
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        #profile-settings {
+            h6 {
+                font-size: 12px;
+
+                i {
+                    display: none;
+                }
+            }
+
+            .nav-link {
+                .start {
+
+                    span {
+                        display: none
+                    }
+
+                    i {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        #about-settings {
+            h6 {
+                font-size: 12px;
+            }
+
+            #account-type {
+
+                #account-type-center {
+
+                    .image {
+                        img {
+                            margin-left: 0;
+                        }
+                    }
+
+                    .title {
+                        font-size: 18px;
+
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+
+                }
+            }
+
+
+        }
+    }
+
+}

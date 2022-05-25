@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- My CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- Bootstrap Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- FOntawasome -->
+  <script src="https://kit.fontawesome.com/bca3ec24e7.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+  <main class="row m-0">
+
+    <!--Profile Side Menu  -->
+    <section class="col-2 col-md-3 p-3" id="side-menu">
+
+      <!-- LOGO -->
+      <a href="" class="h3 text-decoration-none logo">
+        <i class="fa-brands fa-chrome me-3 "></i>
+        <span> LymbuZ</span>
+      </a>
+
+      <!-- Menu Start-->
+
+      <ul class="nav flex-column" id="menu">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa-solid fa-house"></i><span>Home</span></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#">
+            <i class="fa-solid fa-newspaper"></i><span>Dailly News</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa-solid fa-comment-dots"></i><span>Massages</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">
+            <i class="fa-solid fa-user"></i><span>Profile</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa-brands fa-adversal"></i><span>Advert</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa-solid fa-dollar-sign"></i><span>Earnings</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa-solid fa-star"></i><span>Reviews</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa-solid fa-bell"></i><span>Noifications</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa-solid fa-thumbs-up"></i><span>Subscription</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-primary" href="#"><i class="fa-solid fa-circle-plus d-block d-md-none "></i><span
+              class="d-none d-md-block">New Post</span></a>
+        </li>
+      </ul>
+
+      <!-- Menu End-->
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- Profile And About -->
+    <section class="col-10  col-md-9 row align-items-start" id="prifile-about">
+
+
+
+
+      <!-- Profile -->
+      <div class="col-3 col-md-5 nav flex-column  nav-pills p-0" id="profile-settings">
+
+        <!-- Profile Title -->
+        <h6 class="px-1 py-3 px-md-3 bg-primary text-white">
+          <i class="fa-solid fa-arrow-left"></i> Profile Settings
+        </h6>
+
+
+
+        <!--Profile Items Start-->
+        <button class="nav-link" id="about-tab" data-bs-toggle="pill" data-bs-target="#about">
+          <span class="start">
+            <i class="fa-solid fa-address-card"></i>
+            <span>About</span>
+          </span>
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+
+        <button class="nav-link" id="change-password-tab" data-bs-toggle="pill" data-bs-target="#change-password">
+          <span class="start">
+            <i class="fa-solid fa-pen-ruler"></i>
+            <span>Change Password</span>
+          </span>
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+
+        <button class="nav-link" id="privacy-security-tab" data-bs-toggle="pill" data-bs-target="#privacy-security">
+          <span class="start">
+            <i class="fa-solid fa-file-shield"></i>
+            <span>Privacy & Security</span>
+          </span>
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+
+        <button class="nav-link" id="notification-tab" data-bs-toggle="pill" data-bs-target="#notification">
+
+         <span class="start">
+          <i class="fa-solid fa-bell"></i>
+          <span>Notification</span>
+         </span>
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+
+        <button class="nav-link active" id="account-type-tab" data-bs-toggle="pill" data-bs-target="#account-type">
+          <span class="start">
+            <i class="fa-solid fa-file-invoice-dollar"></i>
+          <span>Acount Type</span>
+          </span>
+        </button>
+
+        <button class="nav-link align-items-center " id="log-out-tab" data-bs-toggle="pill" data-bs-target="#log-out">
+          <span class="start">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span class="ms-2"> Log Out</span>
+          </span>
+        </button>
+        <!--Profile Items End-->
+
+      </div>
+
+
+
+
+
+
+      <!-- About -->
+      <div class="col-9 col-md-7 tab-content p-0" id="about-settings">
+
+        <!-- About Title -->
+        <h6 class="p-3 bg-primary text-white">About</h6>
+
+        <!-- About Items Start -->
+
+        <div class="tab-pane fade" id="about">About</div>
+        <div class="tab-pane fade" id="change-password">Change Password</div>
+        <div class="tab-pane fade" id="privacy-security">Privacy Security</div>
+        <div class="tab-pane fade" id="notification">Notification</div>
+
+
+        <!-- Acount Type Start -->
+        <div class="tab-pane fade show active" id="account-type">
+
+
+          <div id="account-type-top">
+            <i class="fa-solid fa-camera"></i>
+          </div>
+
+          <div id="account-type-center">
+            <div class="image">
+              <img src="./image/profile.jpg" alt="">
+              <i class="fa-solid fa-camera"></i>
+            </div>
+            <div class="title">
+              JAsmin AKter <br>
+              <span>@jasminAkter</span>
+            </div>
+          </div>
+
+          <div id="account-type-end">
+            <p id="account-type-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quaerat aperiam, iste explicabo  </p>
+            <button id="btn-verification" class="btn rounded-pill">KYC Verification</button>
+             
+          </div>
+
+        </div>
+        <!-- Acount Type End -->
+
+        <div class="tab-pane fade" id="log-out">LogOut</div>
+
+
+        <!-- About Items End -->
+
+
+      </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+  </main>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
